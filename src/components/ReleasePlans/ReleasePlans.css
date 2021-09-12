@@ -1,0 +1,7 @@
+.releaseCycleTable, th, td {
+    border: 1px solid black;
+}
+
+.featureCol {
+    min-width: 250px;
+}
