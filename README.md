@@ -1,5 +1,5 @@
 # React-Tailwind-GF
-Live: 
+Live: https://rtgf.netlify.app/ <br>
 ***GF*** here doesn't mean your girlfriend 😸. It's an abbreviated form of *Google Forms* 📑. <br>
 My plan with this challenge project is shared in index page, which will constantly be updated.
 
