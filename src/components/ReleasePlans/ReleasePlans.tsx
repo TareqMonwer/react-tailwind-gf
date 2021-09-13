@@ -1,5 +1,6 @@
 import React from "react";
 import featureReleaseDates from "assets/component-releases";
+import { ReleasePlan } from "ts-types/custom.types";
 import "components/ReleasePlans/ReleasePlans.css";
 
 const ReleasePlans: React.FC = () => (
@@ -15,7 +16,7 @@ const ReleasePlans: React.FC = () => (
         </tr>
       </thead>
       <tbody>
-        {featureReleaseDates?.map((planItem, index) => (
+        {featureReleaseDates?.map((planItem:ReleasePlan, index) => (
           <tr key={index}>
             <td>{planItem.featureName}</td>
             <td>{planItem.releaseDate}</td>

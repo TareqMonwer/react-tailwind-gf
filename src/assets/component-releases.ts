@@ -1,8 +1,4 @@
-type ReleasePlan = {
-    featureName: string,
-    releaseDate: string,
-    isReleased: boolean,
-};
+import { ReleasePlan } from "ts-types/custom.types";
 
 const featureReleaseDates: ReleasePlan[] = [
     {
