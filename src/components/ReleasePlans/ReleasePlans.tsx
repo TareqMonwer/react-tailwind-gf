@@ -1,4 +1,5 @@
 import React from "react";
+import clsx from 'clsx';
 import featureReleaseDates from "assets/component-releases";
 import { ReleasePlan } from "ts-types/custom.types";
 import "components/ReleasePlans/ReleasePlans.css";
@@ -20,7 +21,12 @@ const ReleasePlans: React.FC = () => (
           <tr key={index}>
             <td>{planItem.featureName}</td>
             <td>{planItem.releaseDate}</td>
-            <td>{planItem.isReleased ? 'YES' : 'No'}</td>
+            <td className={
+              clsx('releaseStatus',
+                { 'released': planItem.isReleased }
+              )}>
+              {planItem.isReleased ? 'YES' : 'No'}
+            </td>
           </tr>
         ))}
       </tbody>
